@@ -422,7 +422,7 @@ int saveBMP(unsigned int lineCount, FILE* file) {
 }
 
 int createImage(FILE* file) {
-	unsigned int maxLineLength = 80;
+	unsigned int maxLineLength = 120;
 	unsigned int lineCount = 0;
     char* line = calloc(maxLineLength, sizeof(char));
     while (fgets(line, maxLineLength, file))
